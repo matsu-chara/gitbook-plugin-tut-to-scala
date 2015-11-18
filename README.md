@@ -1,6 +1,12 @@
 # gitbook-plugin-sbt-tut
 
-GitBook Plugin for convert \`\`\`tut to \`\`\`scala
+GitBook Plugin for convert 
+
+\`\`\`tut 
+
+to 
+
+\`\`\`scala
 
 [tut](https://github.com/tpolecat/tut) is doc/tutorial generator for scala.
 
