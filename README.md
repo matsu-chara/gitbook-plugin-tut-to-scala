@@ -50,19 +50,15 @@ gitbook install
 
 Before
 
-```
 \`\`\`tut
 class A {}
 \`\`\`
-```
 
 After
 
-```
 \`\`\`scala
 class A {}
 \`\`\`
-```
 
 ## License
 
