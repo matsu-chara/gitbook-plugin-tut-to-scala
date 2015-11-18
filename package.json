@@ -1,0 +1,33 @@
+{
+  "name": "gitbook-plugin-tut-to-scala",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matsu-chara/gitbook-plugin-tut-to-scala.git"
+  },
+  "author": "matsu_chara",
+  "email": "matsuy00@gmail.com",
+  "license": "MIT",
+  "version": "0.1.0",
+  "description": "GitBook plugin for converting tut to scala",
+  "main": "lib/tut-to-scala.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps",
+    "prepublish": "npm run --if-present build"
+  },
+  "keywords": [
+    "gitbook",
+    "plugin",
+    "gitbook-plugin"
+  ],
+  "engines": {
+    "gitbook": "*"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^5.8.23"
+  }
+}
