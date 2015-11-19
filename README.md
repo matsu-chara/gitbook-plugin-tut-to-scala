@@ -26,11 +26,10 @@ scala> 1 + 1
 res0: Int = 2
 ```
 
-
-But, I just want to compile it to check if the codes are not broken.(REPL output is not needed for me.)
+But, I just want to compile it to verify the codes.(REPL output is not needed for me.)
 So I use source markdown (not generated markdown by tut).
 
-But, syntax highlight is inactive because it's not \`\`\`scala.
+But, syntax highlight is inactive because it's not \`\`\`scala but `\`\`\tut.
 
 So I wrote a plugin for converting \`\`\`tut to \`\`\`scala.
 
