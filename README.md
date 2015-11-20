@@ -1,6 +1,6 @@
 # gitbook-plugin-sbt-tut
 
-GitBook Plugin for convert 
+GitBook Plugin for replacing 
 
 \`\`\`tut 
 
@@ -13,25 +13,14 @@ to
 
 ## Motivation
 
-tut compiles
+`sbt tut && gitbook build` is slow (because of sbt startup). 
+I want to compile it to verify the codes, but I don't want to wait for sbt startup.
 
-```tut
-1 + 1
-```
+So, I decide to use src markdown for building gitbook, and use tut in CI testing (just compile).
 
-to
+using src markdown makes syntax highlight inactive, because it's not \`\`\`scala but `\`\`\tut.
 
-```scala
-scala> 1 + 1
-res0: Int = 2
-```
-
-But, I just want to compile it to verify the codes.(REPL output is not needed for me.)
-So I use source markdown (not generated markdown by tut).
-
-But, syntax highlight is inactive because it's not \`\`\`scala but `\`\`\tut.
-
-So I wrote a plugin for converting \`\`\`tut to \`\`\`scala.
+So I wrote a plugin for replacing \`\`\`tut to \`\`\`scala.
 
 ## Installation
 
