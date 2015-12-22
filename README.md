@@ -1,3 +1,5 @@
+# Deprecated
+
 # gitbook-plugin-sbt-tut
 
 GitBook Plugin for replacing 
